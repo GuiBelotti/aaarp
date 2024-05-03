@@ -8,163 +8,21 @@
     <link rel="stylesheet" type="text/css" href="./InitialPage.css" />
 </head>
 
-<style>
-    body,
-    html {
-        margin: 0;
-        padding: 0;
-        font-family: "Roboto", sans-serif;
-        background-color: white;
-    }
-
-    .rowTopBar {
-        display: flex;
-        align-items: center;
-        background-color: #ffb969;
-        color: white;
-
-    }
-
-    .rowTopBar div {
-        flex: 1;
-        text-align: center;
-        font-size: 35px;
-        color: black;
-    }
-
-    .topBar {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #ffb969;
-        color: white;
-        padding: 10px;
-    }
-
-    .topBar svg {
-        width: 49px;
-        height: 49px;
-    }
-
-    .topBar button {
-        font-size: 12px;
-        background-color: transparent;
-        color: black;
-        border: none;
-        padding: 5px 15px;
-        margin: 0 10px;
-        cursor: pointer;
-    }
-
-    .menuToggle {
-        display: block;
-        background-color: #ffb969;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-    }
-
-    .menuSideBar {
-        position: fixed;
-        top: 0;
-        left: -30%;
-        width: 30%;
-        height: 100%;
-        background-color: #ffb969;
-        transition: left 0.3s ease;
-        color: black;
-        box-shadow: 4px 0 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .menuSideBar a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .menuSideBar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .menuSideBar li {
-        padding-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .menuSideBar svg {
-        position: flex;
-        justify-content: left;
-        align-items: left;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .topBar {
-            display: none;
-        }
-
-        .menuToggle {
-            display: block;
-        }
-    }
-
-    @media only screen and (min-width: 769px) {
-        .topBar {
-            display: flex;
-        }
-
-        .menuToggle {
-            display: none;
-        }
-
-        .rowTopBar {
-            display: none;
-        }
-    }
-</style>
-
 <body>
     <header>
         <div class="topBar">
-            <svg class="instagram-logo" fill="#4F1C15" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="50"
-                height="50" viewBox="0 0 551.034 551.034" style="enable-background: new 0 0 000 000"
-                xml:space="preserve">
-                <path class="logo" fill:"#4F1C15" id="XMLID_17_" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
-          c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
-          C551.033,73.64,477.393,0,386.878,0z
-          M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
-          c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
-          c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+            <img src="src/Logo.svg" alt="">
 
-                <path id="XMLID_81_" fill="#4F1C15"
-                    d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z" />
+            <nav class="main_nav">
+                <a>Bazar</a>
+                <a>Doações</a>
+                <a>Voluntários</a>
+                <a>Projetos</a>
+                <a>Sede</a>
+                <a>Educação</a>
+            </nav>
 
-                <circle id="XMLID_83_" fill="#4F1C15" cx="418.306" cy="134.072" r="34.149" />
-            </svg>
-
-            <button>Bazar</button>
-            <button>Doações</button>
-            <button>Voluntários</button>
-            <button>Projetos</button>
-            <button>Sede</button>
-            <button>Educação</button>
-
-            <svg class="instagram-logo" fill="#4F1C15" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="50"
-                height="50" viewBox="0 0 551.034 551.034" style="enable-background: new 0 0 000 000"
-                xml:space="preserve">
-                <path class="logo" fill:"#4F1C15" id="XMLID_17_" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
-          c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
-          C551.033,73.64,477.393,0,386.878,0z
-          M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
-          c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
-          c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
-
-                <path id="XMLID_81_" fill="#4F1C15"
-                    d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z" />
-
-                <circle id="XMLID_83_" fill="#4F1C15" cx="418.306" cy="134.072" r="34.149" />
-            </svg>
+            <img src="src/insta.svg" alt="">
         </div>
         <div class="rowTopBar">
             <button class="menuToggle" onclick="toggleMenu()">
@@ -174,7 +32,8 @@
                         stroke-linejoin="round" />
                 </svg>
             </button>
-            <div>AAARP</div>
+            <div><img src="src/Logo.svg" alt=""></div>
+            <span style="width: 50px; height: 50px;"></span>
         </div>
 
         <div class="menuSideBar" id="menuSideBar">
