@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <title>Initial Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./InitialPage.css" />
+</head>
+
+<style>
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: white;
+    }
+
+    .rowTopBar {
+        display: flex;
+        align-items: center;
+        background-color: #ffb969;
+        color: white;
+
+    }
+
+    .rowTopBar div {
+        flex: 1;
+        text-align: center;
+        font-size: 35px;
+        color: black;
+    }
+
+    .topBar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #ffb969;
+        color: white;
+        padding: 10px;
+    }
+
+    .topBar svg {
+        width: 49px;
+        height: 49px;
+    }
+
+    .topBar button {
+        font-size: 12px;
+        background-color: transparent;
+        color: black;
+        border: none;
+        padding: 5px 15px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    .menuToggle {
+        display: block;
+        background-color: #ffb969;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menuSideBar {
+        position: fixed;
+        top: 0;
+        left: -30%;
+        width: 30%;
+        height: 100%;
+        background-color: #ffb969;
+        transition: left 0.3s ease;
+        color: black;
+        box-shadow: 4px 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .menuSideBar a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .menuSideBar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menuSideBar li {
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .menuSideBar svg {
+        position: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .topBar {
+            display: none;
+        }
+
+        .menuToggle {
+            display: block;
+        }
+    }
+
+    @media only screen and (min-width: 769px) {
+        .topBar {
+            display: flex;
+        }
+
+        .menuToggle {
+            display: none;
+        }
+
+        .rowTopBar {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="topBar">
+            <svg class="instagram-logo" fill="#4F1C15" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="50"
+                height="50" viewBox="0 0 551.034 551.034" style="enable-background: new 0 0 000 000"
+                xml:space="preserve">
+                <path class="logo" fill:"#4F1C15" id="XMLID_17_" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+          c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+          C551.033,73.64,477.393,0,386.878,0z
+          M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+          c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+          c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+
+                <path id="XMLID_81_" fill="#4F1C15"
+                    d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z" />
+
+                <circle id="XMLID_83_" fill="#4F1C15" cx="418.306" cy="134.072" r="34.149" />
+            </svg>
+
+            <button>Bazar</button>
+            <button>Doações</button>
+            <button>Voluntários</button>
+            <button>Projetos</button>
+            <button>Sede</button>
+            <button>Educação</button>
+
+            <svg class="instagram-logo" fill="#4F1C15" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="50"
+                height="50" viewBox="0 0 551.034 551.034" style="enable-background: new 0 0 000 000"
+                xml:space="preserve">
+                <path class="logo" fill:"#4F1C15" id="XMLID_17_" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+          c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+          C551.033,73.64,477.393,0,386.878,0z
+          M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+          c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+          c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+
+                <path id="XMLID_81_" fill="#4F1C15"
+                    d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z" />
+
+                <circle id="XMLID_83_" fill="#4F1C15" cx="418.306" cy="134.072" r="34.149" />
+            </svg>
+        </div>
+        <div class="rowTopBar">
+            <button class="menuToggle" onclick="toggleMenu()">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div>AAARP</div>
+        </div>
+
+        <div class="menuSideBar" id="menuSideBar">
+            <button class="menuToggle" onclick="toggleMenu()">
+                <?xml version="1.0" ?>
+                <svg width="35px" height="35px" viewBox="0 0 512 512" version="1.1" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #333333;
+                        }
+                    </style>
+                    <g id="Layer_1" />
+                    <g id="Layer_2">
+                        <g>
+                            <path class="st0"
+                                d="M217,129.88c-6.25-6.25-16.38-6.25-22.63,0L79.61,244.64c-0.39,0.39-0.76,0.8-1.11,1.23    c-0.11,0.13-0.2,0.27-0.31,0.41c-0.21,0.28-0.42,0.55-0.62,0.84c-0.14,0.21-0.26,0.43-0.39,0.64c-0.14,0.23-0.28,0.46-0.41,0.7    c-0.13,0.24-0.24,0.48-0.35,0.73c-0.11,0.23-0.22,0.45-0.32,0.68c-0.11,0.26-0.19,0.52-0.28,0.78c-0.08,0.23-0.17,0.46-0.24,0.69    c-0.09,0.29-0.15,0.58-0.22,0.86c-0.05,0.22-0.11,0.43-0.16,0.65c-0.08,0.38-0.13,0.76-0.17,1.14c-0.02,0.14-0.04,0.27-0.06,0.41    c-0.11,1.07-0.11,2.15,0,3.22c0.01,0.06,0.02,0.12,0.03,0.18c0.05,0.46,0.12,0.92,0.21,1.37c0.03,0.13,0.07,0.26,0.1,0.39    c0.09,0.38,0.18,0.76,0.29,1.13c0.04,0.13,0.09,0.26,0.14,0.4c0.12,0.36,0.25,0.73,0.4,1.09c0.05,0.11,0.1,0.21,0.15,0.32    c0.17,0.37,0.34,0.74,0.53,1.1c0.04,0.07,0.09,0.14,0.13,0.21c0.21,0.38,0.44,0.76,0.68,1.13c0.02,0.03,0.04,0.06,0.06,0.09    c0.55,0.81,1.18,1.58,1.89,2.29l114.81,114.81c3.12,3.12,7.22,4.69,11.31,4.69s8.19-1.56,11.31-4.69c6.25-6.25,6.25-16.38,0-22.63    l-87.5-87.5h291.62c8.84,0,16-7.16,16-16s-7.16-16-16-16H129.51L217,152.5C223.25,146.26,223.25,136.13,217,129.88z" />
+                        </g>
+                    </g>
+                </svg>
+            </button>
+            <ul>
+                <li><a href="#">Bazar</a></li>
+                <li><a href="#">Doações</a></li>
+                <li><a href="#">Voluntários</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Sede</a></li>
+                <li><a href="#">Educação</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        var isMenuOpen = false;
+        function toggleMenu() {
+            var menu = document.getElementById("menuSideBar");
+            if (!isMenuOpen) {
+                menu.style.left = "0";
+                isMenuOpen = true;
+            } else {
+                menu.style.left = "-30%";
+                isMenuOpen = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
