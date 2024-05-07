@@ -90,7 +90,7 @@ html {
     padding-right: 0.5vw; /* Ajustado para vw */
 }
 
-@media only screen and (max-width: 48em) { 
+@media only screen and (max-width: 48em){ 
     .topBar {
         display: none;
     }
@@ -98,6 +98,24 @@ html {
     .menuToggle {
         display: block;
     }
+
+    .standartRow img {
+        width: 15vw;
+        height: 38vh;
+    }
+    .standartColumn{
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .standartColumn h1 {
+        font-size: 4vw;
+    }
+    .textBox{
+        width: 30vw;
+    }
+
+    
 }
 
 @media only screen and (min-width: 48em) { 
@@ -118,11 +136,11 @@ html {
     padding-top: 8vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    padding-right: 15vw;
 }
 
 .standartRow img {
-    padding-left: 5vw;
+    padding-left: 10vw;
     max-width: 100%;
     height: auto;
     width: 23vw;
@@ -130,9 +148,12 @@ html {
 }
 
 .standartColumn {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 64vh;
+    padding: 0 20px;
 }
 
 .standartColumn h1,
@@ -140,11 +161,11 @@ html {
     color: var(--color-text);
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 .standartColumn h1 {
     font-size: 5vw;
+    margin-top: 0;
 }
 .standartColumn button {
     background-color: var(--color-secondary);
@@ -164,4 +185,26 @@ html {
     justify-content: center;
     align-items: center;
     text-align: justify;
+}
+
+.dogHistory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    height: 250px;
+    margin-top: 40px;
+    flex-direction: row;
+}
+
+.dogImg {
+    background-color: #f4f4f4;
+    width: 150px;
+    height: 150px;
+}
+
+.dogName {
+    color: var(--color-background);
+    font-size: var(--font-size-text);
+    
 }
