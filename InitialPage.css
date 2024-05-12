@@ -98,6 +98,24 @@ html {
     .menuToggle {
         display: block;
     }
+
+    .standartRow img {
+        width: 15vw;
+        height: 38vh;
+    }
+    .standartColumn{
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .standartColumn h1 {
+        font-size: 4vw;
+    }
+    .textBox{
+        width: 30vw;
+    }
+
+    
 }
 
 @media only screen and (min-width: 48em) { 
@@ -169,6 +187,7 @@ html {
     text-align: justify;
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 44em) and (max-width: 48em) {
     .standartRow {
         padding-top: 6vh;
@@ -217,6 +236,8 @@ html {
 
 
 
+=======
+>>>>>>> 0597508332255fea47ff92d2df40cc664ec7a373
 .dogHistory {
     display: flex;
     justify-content: center;
