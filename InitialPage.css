@@ -90,7 +90,7 @@ html {
     padding-right: 0.5vw; /* Ajustado para vw */
 }
 
-@media only screen and (max-width: 48em) { 
+@media only screen and (max-width: 48em){ 
     .topBar {
         display: none;
     }
@@ -118,11 +118,11 @@ html {
     padding-top: 8vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    padding-right: 15vw;
 }
 
 .standartRow img {
-    padding-left: 5vw;
+    padding-left: 10vw;
     max-width: 100%;
     height: auto;
     width: 23vw;
@@ -130,9 +130,12 @@ html {
 }
 
 .standartColumn {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 64vh;
+    padding: 0 20px;
 }
 
 .standartColumn h1,
@@ -140,11 +143,11 @@ html {
     color: var(--color-text);
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 .standartColumn h1 {
     font-size: 5vw;
+    margin-top: 0;
 }
 .standartColumn button {
     background-color: var(--color-secondary);
@@ -164,4 +167,74 @@ html {
     justify-content: center;
     align-items: center;
     text-align: justify;
+}
+
+@media only screen and (min-width: 44em) and (max-width: 48em) {
+    .standartRow {
+        padding-top: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 10vw;
+    }
+    
+    .standartRow img {
+        padding-left: 5vw;
+        max-width: 100%;
+        height: auto;
+        width: 30vw;
+        height: 40vh;
+    }
+    
+    .standartColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 60vh;
+        padding: 0 5px;
+    }
+    
+    .standartColumn button {
+        padding: 1.5vw; 
+        font-size: 3vw; 
+    }
+    
+    .textBox {
+        width: 50vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dogHistory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    height: 250px;
+    margin-top: 40px;
+    flex-direction: row;
+}
+
+.dogImg {
+    background-color: #f4f4f4;
+    width: 150px;
+    height: 150px;
+}
+
+.dogName {
+    color: var(--color-background);
+    font-size: var(--font-size-text);
+    
 }
