@@ -47,7 +47,7 @@ html {
 .main_nav {
     height: 80%;
     display: flex;
-    gap: 2.8vw; 
+    gap: 2.8vw;
     color: #4F1C15;
     font-size: var(--font-size-menu-toggle);
     font-weight: 500;
@@ -85,61 +85,19 @@ html {
 }
 
 .menuSideBar li {
-    padding-top: 1.5vw; 
+    padding-top: 1.5vw;
     padding-left: 0.5vw;
-    padding-right: 0.5vw; /* Ajustado para vw */
+    padding-right: 0.5vw;
 }
 
-@media only screen and (max-width: 48em){ 
-    .topBar {
-        display: none;
-    }
-
-    .menuToggle {
-        display: block;
-    }
-
-    .standartRow img {
-        width: 15vw;
-        height: 38vh;
-    }
-    .standartColumn{
-        align-items: center;
-        text-align: center;
-        padding: 0 20px;
-    }
-    .standartColumn h1 {
-        font-size: 4vw;
-    }
-    .textBox{
-        width: 30vw;
-    }
-
-    
-}
-
-@media only screen and (min-width: 48em) { 
-    .topBar {
-        display: flex;
-    }
-
-    .menuToggle {
-        display: none;
-    }
-
-    .rowTopBar {
-        display: none;
-    }
-}
-
-.standartRow {
+.standardRow {
     padding-top: 8vh;
     display: flex;
     justify-content: space-around;
     padding-right: 15vw;
 }
 
-.standartRow img {
+.standardRow img {
     padding-left: 10vw;
     max-width: 100%;
     height: auto;
@@ -147,7 +105,7 @@ html {
     height: 64vh;
 }
 
-.standartColumn {
+.standardColumn {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -156,25 +114,27 @@ html {
     padding: 0 20px;
 }
 
-.standartColumn h1,
-.standartColumn p {
+.standardColumn h1,
+.standardColumn p ,
+.standardColumn h2 {
     color: var(--color-text);
     padding: 0;
     margin: 0;
 }
 
-.standartColumn h1 {
+.standardColumn h1 {
     font-size: 5vw;
     margin-top: 0;
 }
-.standartColumn button {
+
+.standardColumn button {
     background-color: var(--color-secondary);
     color: white;
     width: 100%;
     border: none;
     border-radius: 1.4vw;
-    padding: 1vw; 
-    font-size: 2vw; 
+    padding: 1vw;
+    font-size: 2vw;
     cursor: pointer;
 }
 
@@ -187,75 +147,201 @@ html {
     text-align: justify;
 }
 
-<<<<<<< HEAD
-@media only screen and (min-width: 44em) and (max-width: 48em) {
-    .standartRow {
-        padding-top: 6vh;
+@media only screen and (max-width: 57em){
+    .topBar {
+        display: none;
+    }
+
+    .menuToggle {
+        display: block;
+    }
+
+    .standardRow img {
+        width: 15vw;
+        height: 38vh;
+    }
+    .standardColumn{
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .standardColumn h1 {
+        font-size: 4vw;
+    }
+    .textBox{
+        width: 30vw;
+    }
+
+}
+@media only screen and (min-width: 57em) {
+    .topBar {
+        display: flex;
+    }
+
+    .menuToggle {
+        display: none;
+    }
+
+    .rowTopBar {
+        display: none;
+    }
+}
+@media only screen and (min-width: 35em) and (max-width: 57em) {
+    .standardRow {
+        padding: 6vh 3vw 0 3vw;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding-right: 10vw;
     }
-    
-    .standartRow img {
-        padding-left: 5vw;
+
+    .standardRow img {
+        padding: 2vw 2vw 0 2vw;
         max-width: 100%;
         height: auto;
         width: 30vw;
         height: 40vh;
     }
-    
-    .standartColumn {
+    .standardColumn p {
+        font-size: 2vw;
+        text-align: justify;
+    }
+    .standardColumn h2 {
+        font-size: 4vw;
+        text-align: justify;
+    }
+    .standardColumn {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
         height: 60vh;
-        padding: 0 5px;
+        padding: 0 3vw;
     }
-    
-    .standartColumn button {
-        padding: 1.5vw; 
-        font-size: 3vw; 
+
+    .standardColumn button {
+        padding: 1.5vw;
+        font-size: 3vw;
     }
-    
+
     .textBox {
         width: 50vw;
     }
 }
+@media only screen and (max-width: 35em) {
 
+    .standardRow{
+    padding: 0 0 0 0;
+}
 
+    .standardRow img{
+        display: none;
+    }
 
+    .standartColumn{
+        justify-content: center;
+        align-items: center;
+        background-image: url('img/img1Blur.png');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+    }
 
+    .standardColumn h1,
+    .standardColumn p ,
+    .standardColumn h2 {
+        text-shadow: 0.15vw 0.15vh 2px var(--color-text);
+        text-shadow: -0.15vw -0.15vh 2px var(--color-text);
+        color: var(--color-background);
+    }
 
+    .standardColumn p{
+        font-size: 3.5vw;
+    }
 
+    .standardColumn h2 {
+        font-size: 4.5vw;
+    }
 
+    .standardColumn h1{
+        padding: 4vh;
+        font-size: 6vw;
+    }
 
+    .standardColumn button{
+       
+        font-size: 3vw;
+    }
 
+    .textBox{
+        align-items: center;
+        width: 80vw;
+        height: 65vh;
+    }
+}
 
-
-
-
-=======
->>>>>>> 0597508332255fea47ff92d2df40cc664ec7a373
-.dogHistory {
+.dogHistory { 
+    margin: 32px 0 32px 0;
+    flex-direction: column;
+    gap: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-secondary);
+    width: 100%;
     height: 250px;
-    margin-top: 40px;
+    background-color: var(--color-secondary);
+}
+
+.dogHistory p {
+    font-size: 24px;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.dogList {
+    display: flex;
     flex-direction: row;
+    gap: 32px;
+}
+
+.dogName {
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
 }
 
 .dogImg {
-    background-color: #f4f4f4;
+    border-radius: 10px;
     width: 150px;
     height: 150px;
 }
 
-.dogName {
+.infoShelter {
+    margin-top: 32px;
+    background-color: var(--color-secondary);
     color: var(--color-background);
-    font-size: var(--font-size-text);
-    
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.infoShelter p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.schedules {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.schedules li {
+    margin-right: 15vw;
 }
